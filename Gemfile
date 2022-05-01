@@ -7,6 +7,10 @@ ruby '3.1.1'
 gem 'rails', '~> 6.1.5', '>= 6.1.5.1'
 # Use sqlite3 as the database for Active Record
 
+gem 'net-smtp'
+gem 'net-imap'
+gem 'net-pop'
+
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
