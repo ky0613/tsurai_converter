@@ -1,16 +1,25 @@
 <template>
-  <div id="app" class="bg-gray-400">
-    <p class="text-6xl text-red-500">{{ message }}</p>
-    <p class="text-6xl text-blue-900">デプロイできたよ</p>
+  <div id="app">
+    <body class="flex flex-col min-h-screen">
+      <TheHeader />
+      <main class="flex flex-1">
+        <div class="m-auto max-w-4xl w-full">
+          <router-view />
+        </div>
+      </main>
+      <TheFooter />
+    </body>
   </div>
 </template>
 
 <script>
+import TheHeader from "./components/TheHeader";
+import TheFooter from "./components/TheFooter";
+
 export default {
-  data: function () {
-    return {
-      message: "Hello Vue!",
-    };
+  components: {
+    TheHeader,
+    TheFooter,
   },
 };
 </script>
