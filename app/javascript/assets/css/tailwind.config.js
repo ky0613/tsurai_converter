@@ -1,11 +1,5 @@
 module.exports = {
-  content: [
-    "./app/views/**/*.erb",
-    "./app/javascript/app.vue",
-    // "./app/javascript/packs.vue",
-    // "./app/javascript/**/*.vue",
-    // "./app/javascript/*.vue",
-  ],
+  content: ["./app/views/**/*.erb", "./app/javascript/app.vue"],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},

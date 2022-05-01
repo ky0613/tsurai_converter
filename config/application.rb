@@ -11,6 +11,19 @@ module TsuraiConverter
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
 
+    config.api_only = true
+
+    config.middleware.use ActionDispatch::Flash
+
+    config.generators do |g|
+      g.template_engine false
+      g.assets false
+      g.helper false
+      g.skip_routes true
+      g.test_framework :rspec,
+                        view_specs: false,
+                        helper_specs: false
+    end
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files
