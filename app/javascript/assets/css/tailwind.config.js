@@ -6,7 +6,6 @@ module.exports = {
     "./app/javascript/**/*.vue",
     "./app/javascript/*.vue",
   ],
-  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
   },
