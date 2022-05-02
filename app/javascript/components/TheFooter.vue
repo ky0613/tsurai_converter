@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div class="text-center p-4 mx-auto">
+    <div class="text-center p-4 mx-auto text-white">
       <ul class="flex justify-center gap-4">
         <router-link :to="{ name: 'Terms' }"
           ><li class="text-xs">利用規約</li></router-link
