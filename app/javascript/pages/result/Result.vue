@@ -1,6 +1,7 @@
 <template>
-  <div>
-    <div class="converted text-9xl mx-auto">辛い</div>
+  <div class="text-center flex flex-col">
+    <ruby class="text-9xl mx-auto h-full"><rb>辛</rb><rt>から</rt>い</ruby>
+    <ruby class="text-9xl mx-auto h-full"><rb>㸉</rb><rt>やわら</rt>げる</ruby>
   </div>
 </template>
 
@@ -10,8 +11,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.converted {
-  writing-mode: vertical-rl;
-}
-</style>
+<style scoped></style>
