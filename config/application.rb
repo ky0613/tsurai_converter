@@ -13,6 +13,7 @@ module TsuraiConverter
 
     config.api_only = true
 
+    config.paths.add 'lib', eager_load: true
     config.middleware.use ActionDispatch::Flash
 
     config.generators do |g|
