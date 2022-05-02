@@ -1,7 +1,7 @@
 <template>
   <footer>
-    <div class="text-center p-4 mx-auto">
-      <ul class="flex justify-center gap-4">
+    <div class="text-right p-4 mx-auto text-black">
+      <ul class="flex justify-end gap-4">
         <router-link :to="{ name: 'Terms' }"
           ><li class="text-xs">利用規約</li></router-link
         >
@@ -12,7 +12,7 @@
           ><li class="text-xs">開発者Twitter(お問い合わせ)</li></a
         >
       </ul>
-      <small>Copyright &copy; 2022. 辛いコンバーター</small>
+      <small class="mr-20">Copyright &copy; 2022. 辛いコンバーター</small>
     </div>
   </footer>
 </template>

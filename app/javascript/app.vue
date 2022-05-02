@@ -25,8 +25,10 @@ export default {
 </script>
 
 <style scoped>
-p {
-  font-size: 2em;
-  text-align: center;
+body {
+  background-image: url("../../public/wise-pug-thinking-about-the-world.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
 }
 </style>

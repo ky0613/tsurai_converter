@@ -9,6 +9,9 @@ import Vue from "vue";
 import App from "../app.vue";
 import router from "../router/index";
 import store from "../store";
+import VueScroollTo from "vue-scrollto";
+
+Vue.use(VueScroollTo);
 
 document.addEventListener("DOMContentLoaded", () => {
   const app = new Vue({

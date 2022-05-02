@@ -4,7 +4,9 @@ import Router from "vue-router";
 import TopIndex from "../pages/top/index.vue";
 import Terms from "../pages/static/Terms.vue";
 import Policy from "../pages/static/Policy.vue";
-import Result from "../pages/result/Result.vue";
+import FireResult from "../pages/result/FireResult.vue";
+import TwinResult from "../pages/result/TwinResult.vue";
+import ConvertResult from "../pages/result/ConvertResult.vue";
 
 Vue.use(Router);
 
@@ -17,9 +19,19 @@ const router = new Router({
       component: TopIndex,
     },
     {
-      path: "/result",
-      name: "Result",
-      component: Result,
+      path: "/fire-result",
+      name: "FireResult",
+      component: FireResult,
+    },
+    {
+      path: "/convert-result",
+      name: "ConvertResult",
+      component: ConvertResult,
+    },
+    {
+      path: "/twin-result",
+      name: "TwinResult",
+      component: TwinResult,
     },
     {
       path: "/terms",
