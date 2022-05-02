@@ -2,10 +2,10 @@ class YoutubeApiClient
   YOUTUBE_HOST = "https://www.googleapis.com/youtube/v3/search?"
 
   def initialize
-    @token = Rails.application.credentials.youtube[:token]
+    # @token = Rails.application.credentials.youtube[:token]
   end
 
-  def get_lists
+  def get_lists(query)
     params = URI.encode_www_form({
       key: @token,
       part: "snippet",
@@ -24,8 +24,8 @@ class YoutubeApiClient
       YoutubeApiClient.new
     end
 
-    def get_lists
-      client.get_lists
+    def get_lists(query)
+      client.get_lists(query)
     end
   end
 end

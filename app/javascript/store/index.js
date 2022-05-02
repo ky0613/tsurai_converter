@@ -15,8 +15,10 @@ export default new Vuex.Store({
     setLists: (state, lists) => (state.lists = lists),
   },
   actions: {
-    fetchLists: async ({ commit }) => {
-      const response = await axios.get("youtube_lists");
+    fetchLists: async ({ commit }, query) => {
+      const response = await axios.get("youtube_lists", {
+        params: { query },
+      });
       commit("setLists", response.data.items);
     },
   },
