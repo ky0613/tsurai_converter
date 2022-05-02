@@ -1,13 +1,13 @@
 <template>
-  <div class="text-right h-full flex flex-col justify-center mr-40">
+  <div class="text-right h-full flex flex-col justify-center mr-28">
     <div class="mb-10 text-right">
       <ruby class="text-9xl text-black" v-show="isChange"
         ><rb>辛</rb><rt>つら</rt>い</ruby
       >
       <p class="text-3xl text-black mt-10 ml-32">
-        あなたの<ruby class="text-3xl text-black"
+        あなたの『<ruby class="text-3xl text-black"
           ><rb>辛</rb><rt>つら</rt>い</ruby
-        >を変えます。
+        >』を変えます。
       </p>
     </div>
     <div class="flex flex-col">
