@@ -1,12 +1,18 @@
 <template>
   <div>
-    <TheResult :searchQuery="'激辛'" :kanji="'辛'" :ruby="'から'" :okuri="'い'">
-      <template #message>
-        <div>
-          <p class="text-3xl my-10 mx-auto">
-            特典として，激辛動画をご査収ください。
-          </p>
-        </div>
+    <TheResult
+      :youtube="youtube"
+      :kanji="kanji"
+      :ruby="ruby"
+      :okuri="okuri"
+      :spotify="spotify"
+      :isColor="isColor"
+    >
+      <template #youtube-message>
+        特典として，激辛の動画をご査収ください。
+      </template>
+      <template #spotify-message>
+        特典として，激辛くらいホットな音楽をご査収ください。
       </template>
     </TheResult>
   </div>
@@ -19,6 +25,21 @@ export default {
   name: "ConvertResult",
   components: {
     TheResult,
+  },
+  data() {
+    return {
+      kanji: "辛",
+      ruby: "から",
+      okuri: "い",
+      youtube: {
+        searchQuery: "激辛",
+      },
+      spotify: {
+        listType: "track",
+        searchQuery: "Hot",
+      },
+      isColor: "red",
+    };
   },
 };
 </script>

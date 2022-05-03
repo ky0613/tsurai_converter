@@ -2,14 +2,14 @@ class YoutubeApiClient
   YOUTUBE_HOST = "https://www.googleapis.com/youtube/v3/search?"
 
   def initialize
-    # @token = Rails.application.credentials.youtube[:token]
+    @token = Rails.application.credentials.youtube[:token]
   end
 
   def get_lists(query)
     params = URI.encode_www_form({
       key: @token,
       part: "snippet",
-      q: "激辛"
+      q: query
     })
     uri = URI.parse("#{YOUTUBE_HOST}#{params}")
     http = Net::HTTP.new(uri.host, uri.port)
