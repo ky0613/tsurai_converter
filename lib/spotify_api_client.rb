@@ -13,6 +13,7 @@ class SpotifyApiClient
     request["Authorization"] = "Basic #{Base64.encode64("#{client_id}:#{client_secret}").gsub(/\n/, '')}"
     response = http.request(request)
     auth_params = JSON.parse(response.body)
+    byebug
     @token = auth_params["access_token"]
   end
 
