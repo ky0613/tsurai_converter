@@ -35,7 +35,6 @@ class SpotifyApiClient
     tracks = data["tracks"]["items"]
     check_tracks = tracks.uniq{|track| track["album"]["id"]}.shuffle.slice(0, 6)
     convert_json = {items: check_tracks}.to_json
-    JSON.parse(convert_json)
   end
 
   class << self
