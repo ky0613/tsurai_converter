@@ -2,7 +2,6 @@ class SpotifyApiClient
 
   ACCSESS_TOKEN_HOST = "https://accounts.spotify.com/api/token?grant_type=client_credentials"
   SPOTIFY_HOST = "https://api.spotify.com/v1/search?"
-  SPOTIFY_ANALYSIS = "https://api.spotify.com/v1/audio-analysis/"
 
   def initialize
     client_id = Rails.application.credentials.spotify[:id]
