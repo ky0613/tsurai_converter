@@ -41,18 +41,12 @@
 </template>
 
 <script>
-// import URLAnimation from "../../lib/urlAnimation";
-
 export default {
   name: "TopIndex",
   data() {
     return {
       isChange: true,
     };
-  },
-  mounted() {
-    // let m = new URLAnimation();
-    // m.animation();
   },
   methods: {
     convert() {

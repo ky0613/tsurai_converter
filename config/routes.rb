@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :youtube_lists, only: %i(index)
+      resources :spotify_lists, only: %i(index)
     end
   end
   get '*path', to: 'home#index'
