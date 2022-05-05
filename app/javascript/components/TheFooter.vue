@@ -1,7 +1,7 @@
 <template>
   <footer>
     <div class="flex flex-col p-4 mx-auto text-black text-right">
-      <ul class="flex justify-end">
+      <ul class="flex justify-end gap-4">
         <router-link :to="{ name: 'Terms' }"
           ><li class="text-xs">利用規約</li></router-link
         >
