@@ -36,7 +36,7 @@ export default {
       },
       spotify: {
         listType: "track",
-        searchQuery: "Hot",
+        searchQuery: "เผ็ด",
       },
       isColor: "red",
     };
