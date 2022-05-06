@@ -39,7 +39,7 @@ export default {
       },
       spotify: {
         listType: "track",
-        searchQuery: "Rock",
+        searchQuery: "เต้นรำ",
       },
       isColor: "orange",
     };
